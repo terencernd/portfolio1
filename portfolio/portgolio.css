@@ -316,43 +316,6 @@ h2::after {
     z-index: 1;
 }
 
-/* Sélecteur de source */
-.source-selector {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 1;
-}
-
-.source-btn {
-    padding: 12px 24px;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    border: 2px solid rgba(0, 255, 0, 0.3);
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s;
-}
-
-.source-btn:hover {
-    background-color: rgba(0, 255, 0, 0.1);
-    border-color: #00ff00;
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
-    transform: translateY(-2px);
-}
-
-.source-btn.active {
-    background-color: #00ff00;
-    color: #000000;
-    border-color: #00ff00;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-}
-
 /* Conteneur du carrousel */
 .carousel-container {
     position: relative;
@@ -712,14 +675,5 @@ footer {
     
     .article-image {
         height: 180px;
-    }
-    
-    .source-selector {
-        gap: 10px;
-    }
-    
-    .source-btn {
-        padding: 10px 18px;
-        font-size: 0.85rem;
     }
 }

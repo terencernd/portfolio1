@@ -63,26 +63,78 @@
 
     <section id="veille">
         <h2>Veille Technologique - Cybersécurité</h2>
-        <p class="veille-intro">Derniers articles sur la cybersécurité</p>
+        <p class="veille-intro">Vulnérabilités logicielles - Dernières découvertes</p>
         
-        <!-- Sélecteur de source -->
-        <div class="source-selector">
-            <button class="source-btn active" data-feed="https://feeds.feedburner.com/TheHackersNews">The Hacker News</button>
-            <button class="source-btn" data-feed="https://www.bleepingcomputer.com/feed/">Bleeping Computer</button>
-            <button class="source-btn" data-feed="https://krebsonsecurity.com/feed/">Krebs on Security</button>
-            <button class="source-btn" data-feed="https://www.darkreading.com/rss.xml">Dark Reading</button>
-        </div>
-
         <!-- Carrousel RSS -->
         <div class="carousel-container">
             <button class="carousel-btn prev" id="prevBtn">‹</button>
             
             <div class="carousel-wrapper">
                 <div class="carousel-track" id="carouselTrack">
-                    <!-- Les articles seront chargés ici dynamiquement -->
-                    <div class="article-card loading">
-                        <div class="loading-spinner"></div>
-                        <p>Chargement des articles...</p>
+                    <!-- Article 1 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 14 janvier 2025</span>
+                            <h3 class="article-title">Vulnérabilité critique CVE-2024-55591 dans FortiOS</h3>
+                            <p class="article-description">Une faille permettant de contourner l'authentification a été découverte dans FortiOS. Exploitée depuis novembre 2024, elle affecte environ 50 000 appareils. Le problème réside dans le module WebSocket de Node.js qui ne vérifie pas correctement les connexions...</p>
+                            <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 4 août 2025</span>
+                            <h3 class="article-title">Exploitation active de CVE-2025-31324 dans SAP NetWeaver</h3>
+                            <p class="article-description">Des pirates ont exploité une vulnérabilité critique dans SAP NetWeaver pour déployer le malware "Auto-Color" sur Linux. L'attaque a visé une entreprise chimique américaine, permettant un accès non autorisé aux systèmes critiques...</p>
+                            <a href="https://dcod.ch/2025/08/04/les-vulnerabilites-a-suivre-4-aout-2025/" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 19 juillet 2025</span>
+                            <h3 class="article-title">Failles ToolShell dans Microsoft SharePoint</h3>
+                            <p class="article-description">Microsoft SharePoint est touché par deux CVE critiques (CVE-2025-53770 et CVE-2025-53771) utilisées conjointement. Surnommée "ToolShell", cette attaque exploite le fichier ToolPane.aspx pour compromettre les serveurs SharePoint Enterprise...</p>
+                            <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 4 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 10 février 2025</span>
+                            <h3 class="article-title">9 vulnérabilités critiques découvertes dans Adobe Commerce</h3>
+                            <p class="article-description">Adobe Commerce est touché par 9 failles critiques (scores CVSS jusqu'à 9.1), incluant des contournements d'autorisation, vulnérabilités XSS et injection de scripts malveillants. Les plateformes e-commerce sont particulièrement exposées aux vols de données financières...</p>
+                            <a href="https://www.roboto.fr/blog/guide-complet-des-vuln-rabilit-s-informatiques-critiques-de-f-vrier-2025" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 5 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 Octobre 2025</span>
+                            <h3 class="article-title">React2Shell : faille critique CVSS 10.0 dans React 19</h3>
+                            <p class="article-description">Une vulnérabilité catastrophique affecte React 19 et Next.js via les React Server Components. Un attaquant non authentifié peut exécuter du code arbitraire sur le serveur via une simple requête HTTP spécialement conçue...</p>
+                            <a href="https://dyma.fr/blog/analyse-des-failles-critiques-de-2025-et-de-leur-impact-sur-le-devops/" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 6 -->
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800')"></div>
+                        <div class="article-content">
+                            <span class="article-date">📅 Septembre 2025</span>
+                            <h3 class="article-title">Attaque massive sur npm : 500+ paquets compromis</h3>
+                            <p class="article-description">Une attaque supply chain d'envergure a compromis plus de 500 paquets npm populaires via un ver informatique. Des workflows GitHub Actions ont été exploités pour révéler des secrets. Cette tendance marque une professionnalisation des attaques sur la chaîne logistique...</p>
+                            <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,7 +145,7 @@
         <div class="carousel-dots" id="carouselDots"></div>
 
         <div class="rss-info">
-            <p>💡 <strong>Info :</strong> Les articles sont récupérés en temps réel depuis les flux RSS cybersécurité</p>
+            <p>💡 <strong>Thème :</strong> Vulnérabilités logicielles et failles de sécurité critiques</p>
         </div>
     </section>
 
@@ -130,7 +182,65 @@
         <p>&copy; 2025 Terence Randriamandimby - BTS SIO SLAM</p>
     </footer>
 
-    <!-- Script JavaScript pour le carrousel RSS -->
-    <script src="carousel-rss.js"></script>
+    <script>
+        // Configuration du carrousel avec articles fixes
+        let currentIndex = 0;
+        let totalSlides = 6; // 6 articles fixes
+
+        // Fonction pour mettre à jour la position du carrousel
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const dots = document.querySelectorAll('.dot');
+            
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Navigation du carrousel
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Créer les points de navigation
+            const dotsContainer = document.getElementById('carouselDots');
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.className = i === 0 ? 'dot active' : 'dot';
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+
+            // Événements des boutons de navigation
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', prevSlide);
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextSlide);
+            }
+
+            // Auto-play du carrousel
+            setInterval(nextSlide, 8000); // Change toutes les 8 secondes
+        });
+    </script>
 </body>
 </html>
