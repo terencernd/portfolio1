@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terence Randriamandimby - Portfolio</title>
+    <link rel="stylesheet" href="portgolio.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TR</div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#veille">Veille Techno</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Terence <span>Randriamandimby</span></h1>
+            <p class="subtitle">Étudiant BTS SIO - SLAM</p>
+            <p class="description">Passionné par le développement web et les nouvelles technologies</p>
+            <a href="#contact" class="btn">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="icon"></div>
+                <h3>HTML</h3>
+                <p>Création de pages web</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon"></div>
+                <h3>CSS</h3>
+                <p>Design et mise en page</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon"></div>
+                <h3>JavaScript</h3>
+                <p>Interactivité des pages</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon"></div>
+                <h3>PHP</h3>
+                <p>Développement backend</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon"></div>
+                <h3>MySQL</h3>
+                <p>Gestion de bases de données</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille">
+        <h2>Veille Technologique - Cybersécurité</h2>
+        <p class="veille-intro">Derniers articles sur la cybersécurité</p>
+        
+        <!-- Sélecteur de source -->
+        <div class="source-selector">
+            <button class="source-btn active" data-feed="https://feeds.feedburner.com/TheHackersNews">The Hacker News</button>
+            <button class="source-btn" data-feed="https://www.bleepingcomputer.com/feed/">Bleeping Computer</button>
+            <button class="source-btn" data-feed="https://krebsonsecurity.com/feed/">Krebs on Security</button>
+            <button class="source-btn" data-feed="https://www.darkreading.com/rss.xml">Dark Reading</button>
+        </div>
+
+        <!-- Carrousel RSS -->
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="prevBtn">‹</button>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Les articles seront chargés ici dynamiquement -->
+                    <div class="article-card loading">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des articles...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next" id="nextBtn">›</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+
+        <div class="rss-info">
+            <p>💡 <strong>Info :</strong> Les articles sont récupérés en temps réel depuis les flux RSS cybersécurité</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"></div>
+                <h3>Email</h3>
+                <p>terencerandriamandimby@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon"></div>
+                <h3>Téléphone</h3>
+                <p>06 56 89 84 47</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon"></div>
+                <h3>Localisation</h3>
+                <p>Villeneuve-la-Garenne</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon"></div>
+                <h3>GitHub</h3>
+                <p>github.com/terencerandriamandimby</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Terence Randriamandimby - BTS SIO SLAM</p>
+    </footer>
+
+    <!-- Script JavaScript pour le carrousel RSS -->
+    <script src="carousel-rss.js"></script>
+</body>
+</html>
