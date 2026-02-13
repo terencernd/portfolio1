@@ -12,6 +12,7 @@
         <ul>
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
             <li><a href="#veille">Veille Techno</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -61,78 +62,95 @@
         </div>
     </section>
 
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?w=800')"></div>
+                <div class="project-content">
+                    <h3>E-commerce</h3>
+                    <p class="project-description">Plateforme de vente en ligne développée en PHP et MySQL. Système complet de gestion de produits, panier d'achat et espace client sécurisé.</p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/terencernd/ecommerce.git" target="_blank" class="project-link">
+                            <span>📂</span> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="veille">
         <h2>Veille Technologique - Cybersécurité</h2>
         <p class="veille-intro">Vulnérabilités logicielles - Dernières découvertes</p>
         
-        <!-- Carrousel RSS -->
         <div class="carousel-container">
             <button class="carousel-btn prev" id="prevBtn">‹</button>
             
             <div class="carousel-wrapper">
                 <div class="carousel-track" id="carouselTrack">
-                    <!-- Article 1 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 14 janvier 2025</span>
                             <h3 class="article-title">Vulnérabilité critique CVE-2024-55591 dans FortiOS</h3>
-                            <p class="article-description">Une faille permettant de contourner l'authentification a été découverte dans FortiOS. Exploitée depuis novembre 2024, elle affecte environ 50 000 appareils. Le problème réside dans le module WebSocket de Node.js qui ne vérifie pas correctement les connexions...</p>
+                            <p class="article-description">Une faille permettant de contourner l'authentification a été découverte dans FortiOS. Exploitée depuis novembre 2024, elle affecte environ 50 000 appareils...</p>
                             <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
 
-                    <!-- Article 2 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 4 août 2025</span>
                             <h3 class="article-title">Exploitation active de CVE-2025-31324 dans SAP NetWeaver</h3>
-                            <p class="article-description">Des pirates ont exploité une vulnérabilité critique dans SAP NetWeaver pour déployer le malware "Auto-Color" sur Linux. L'attaque a visé une entreprise chimique américaine, permettant un accès non autorisé aux systèmes critiques...</p>
+                            <p class="article-description">Des pirates ont exploité une vulnérabilité critique dans SAP NetWeaver pour déployer le malware "Auto-Color" sur Linux...</p>
                             <a href="https://dcod.ch/2025/08/04/les-vulnerabilites-a-suivre-4-aout-2025/" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
 
-                    <!-- Article 3 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 19 juillet 2025</span>
                             <h3 class="article-title">Failles ToolShell dans Microsoft SharePoint</h3>
-                            <p class="article-description">Microsoft SharePoint est touché par deux CVE critiques (CVE-2025-53770 et CVE-2025-53771) utilisées conjointement. Surnommée "ToolShell", cette attaque exploite le fichier ToolPane.aspx pour compromettre les serveurs SharePoint Enterprise...</p>
+                            <p class="article-description">Microsoft SharePoint est touché par deux CVE critiques (CVE-2025-53770 et CVE-2025-53771) utilisées conjointement...</p>
                             <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
 
-                    <!-- Article 4 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 10 février 2025</span>
                             <h3 class="article-title">9 vulnérabilités critiques découvertes dans Adobe Commerce</h3>
-                            <p class="article-description">Adobe Commerce est touché par 9 failles critiques (scores CVSS jusqu'à 9.1), incluant des contournements d'autorisation, vulnérabilités XSS et injection de scripts malveillants. Les plateformes e-commerce sont particulièrement exposées aux vols de données financières...</p>
+                            <p class="article-description">Adobe Commerce est touché par 9 failles critiques (scores CVSS jusqu'à 9.1), incluant des contournements d'autorisation...</p>
                             <a href="https://www.roboto.fr/blog/guide-complet-des-vuln-rabilit-s-informatiques-critiques-de-f-vrier-2025" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
 
-                    <!-- Article 5 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 Octobre 2025</span>
                             <h3 class="article-title">React2Shell : faille critique CVSS 10.0 dans React 19</h3>
-                            <p class="article-description">Une vulnérabilité catastrophique affecte React 19 et Next.js via les React Server Components. Un attaquant non authentifié peut exécuter du code arbitraire sur le serveur via une simple requête HTTP spécialement conçue...</p>
+                            <p class="article-description">Une vulnérabilité catastrophique affecte React 19 et Next.js via les React Server Components...</p>
                             <a href="https://dyma.fr/blog/analyse-des-failles-critiques-de-2025-et-de-leur-impact-sur-le-devops/" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
 
-                    <!-- Article 6 -->
                     <div class="article-card">
                         <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800')"></div>
                         <div class="article-content">
                             <span class="article-date">📅 Septembre 2025</span>
                             <h3 class="article-title">Attaque massive sur npm : 500+ paquets compromis</h3>
-                            <p class="article-description">Une attaque supply chain d'envergure a compromis plus de 500 paquets npm populaires via un ver informatique. Des workflows GitHub Actions ont été exploités pour révéler des secrets. Cette tendance marque une professionnalisation des attaques sur la chaîne logistique...</p>
+                            <p class="article-description">Une attaque supply chain d'envergure a compromis plus de 500 paquets npm populaires via un ver informatique...</p>
                             <a href="https://blog.humancoders.com/les-pires-failles-de-securite-de-2025-3853/" target="_blank" class="article-link">Lire l'article →</a>
                         </div>
                     </div>
@@ -183,23 +201,22 @@
     </footer>
 
     <script>
-        // Configuration du carrousel avec articles fixes
         let currentIndex = 0;
-        let totalSlides = 6; // 6 articles fixes
+        let totalSlides = 6;
 
-        // Fonction pour mettre à jour la position du carrousel
         function updateCarousel() {
             const track = document.getElementById('carouselTrack');
             const dots = document.querySelectorAll('.dot');
-            
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
+            track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+            dots.forEach(function(dot, index) {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
             });
         }
 
-        // Navigation du carrousel
         function nextSlide() {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateCarousel();
@@ -215,31 +232,18 @@
             updateCarousel();
         }
 
-        // Initialisation au chargement de la page
         document.addEventListener('DOMContentLoaded', function() {
-            // Créer les points de navigation
             const dotsContainer = document.getElementById('carouselDots');
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement('span');
                 dot.className = i === 0 ? 'dot active' : 'dot';
-                dot.addEventListener('click', () => goToSlide(i));
+                dot.onclick = function() { goToSlide(i); };
                 dotsContainer.appendChild(dot);
             }
 
-            // Événements des boutons de navigation
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            
-            if (prevBtn) {
-                prevBtn.addEventListener('click', prevSlide);
-            }
-            
-            if (nextBtn) {
-                nextBtn.addEventListener('click', nextSlide);
-            }
-
-            // Auto-play du carrousel
-            setInterval(nextSlide, 8000); // Change toutes les 8 secondes
+            document.getElementById('prevBtn').onclick = prevSlide;
+            document.getElementById('nextBtn').onclick = nextSlide;
+            setInterval(nextSlide, 8000);
         });
     </script>
 </body>
